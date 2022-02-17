@@ -1,3 +1,4 @@
+from itertools import product
 from django.http.response import HttpResponse, JsonResponse
 from django.shortcuts import render
 from rest_framework import fields
@@ -20,7 +21,6 @@ class getAPIVIEW(RetrieveAPIView):
 class tamilresults(APIView):
     def get(self,request):
         data = Product.objects.values('prod_id','prod_name_ta','prod_desc_ta','prod_class_ta')
-        
         return JsonResponse(list(data),safe=False)
 
 class getdata(APIView):

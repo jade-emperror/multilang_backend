@@ -85,7 +85,7 @@ DATABASES = {
         'PORT': '1433',
         'NAME': 'productss',
         'USER': 'jade',
-        'PASSWORD': 'test123',
+        'PASSWORD': 'qwe123',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
